@@ -1,0 +1,53 @@
+.footer{
+	width: auto;
+	height: 120px;
+	padding: 0 60px;
+	background: #000;
+	margin-top: 100px;
+	border-top: 3px #14f8dc solid;
+	position: relative;
+
+}
+.footer>p:nth-child(2){
+	margin: 20px 0 0 40px;
+	font-size: 20px;
+	letter-spacing: 2px;
+	color: #fff;
+}
+.footer img{
+	width: 100px;
+	height: 100px;
+	position: absolute;
+	top: -93px;
+	left: 100px;
+	z-index: -2;
+}
+
+.footer>div{
+	margin: 10px 0 0 40px;
+}
+.footer>div p{
+	line-height: 20px;
+	float: left;
+	color: #fff;
+	font-size: 14px;
+	margin-right: 60px;
+}
+.footer>div p:nth-child(1) span{
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+	background: url(../tianmao_image/myphone.png) no-repeat center center;
+}
+.footer>div p:nth-child(2) span{
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+	background: url(../tianmao_image/email.png) no-repeat center center;
+}
+.footer>div p:nth-child(3) span{
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+	background: url(../tianmao_image/qq.png) no-repeat center center;
+}

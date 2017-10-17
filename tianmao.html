@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+	<meta charset="UTF-8">
+	<title>模仿天猫商城</title>
+	<link rel="shortcut icon" type="image/x-icon" href="tianmao_image/favicon.ico.png">
+	<link rel="stylesheet" type="text/css" href="tianmao_css/tianmao-nav.css">
+	<link rel="stylesheet" type="text/css" href="tianmao_css/tianmao-header.css">
+	<link rel="stylesheet" type="text/css" href="tianmao_css/tianmao-body.css">
+	<link rel="stylesheet" type="text/css" href="tianmao_css/rightFixed.css">
+	<link rel="stylesheet" type="text/css" href="tianmao_css/footer.css">
+	<script type="text/javascript" src="tianmao_js/jquery-3.2.1.min.js"></script>
+	<script type="text/javascript" src="tianmao_js/jquery.rotate.min.js"></script>
+</head>
+<body>
+	<!-- 页面顶部导航菜单 -->
+	<div class="navigation clearselect">
+		<div class="nav-main">
+			<p>欢迎来撩！！！</p>
+			<ul class="nav-left">
+				<li>
+					<a id="alertLoad" href="##">请登录</a>
+					<div class="landing-window">
+						<img src="tianmao_image/image001.png" class="loading-image1" id="loading-image1">
+						<div class="loading-window-top">jQuery实现登陆窗<span id="loading-del"></span></div>
+						<div class="loading-window-body">
+							<div class="loading-userNum">
+								<form action="post">
+									<span class="user-logo"></span>
+									<input id="userNum" class="user-inner" type="text" name="userNum" placeholder="会员名/邮箱/手机号" >
+									<span id="reset1" class="reset"></span>
+								</form>
+							</div>
+							<div class="loading-password">
+								<form action="post">
+									<span class="pass-logo"></span>
+									<input id="password" class="pass-inner" type="password" name="password">
+									<span id="reset2" class="reset"></span>
+								</form>
+							</div>
+						</div>
+						<div class="loading-window-bottom">
+							<p></p>
+							<div class="loading-button" id="loading-button">登&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;陆</div>
+						</div>
+					</div>
+					<div class="landing-show" id="landing-show">
+						<div class="landing-show-arrow"></div>
+						<div class="landing-show-main">点击我</div>
+					</div>
+				</li>
+				<li><a href="##">免费注册</a></li>
+			</ul>
+			<ul class="nav-right">
+				<li>
+					<span class="nav-other"></span>网站导航<span class="down-arrow"></span>
+					<div class="nav-second-iteml">
+						<div class="webnav-float">
+							<p>热点推荐&nbsp;Hot</p>
+							<ul>
+								<li><a href="##">天猫超市</a></li>
+								<li><a href="##">喵鲜生</a></li>
+								<li><a href="##">科技新品</a></li>
+								<li><a href="##">女生新品<span></span></a></li>
+								<li><a href="##">酷玩街</a></li>
+								<li><a href="##">内衣新品<span></span></a></li>
+								<li><a href="##">四美装</a></li>
+								<li><a href="##">运动新品<span></span></a></li>
+								<li><a href="##">时尚先生</a></li>
+								<li><a href="##">精明妈妈</a></li>
+								<li><a href="##">石勒智</a></li>
+								<li><a href="##">企业采购</a></li>
+								<li><a href="##">买你妹啊<span></span></a></li>
+								<li><a href="##">剁手党</a></li>
+								<li><a href="##">呵呵呵</a></li>
+							</ul>
+						</div>
+						<div class="webnav-float">
+							<p>行业市场&nbsp;Market</p>
+							<ul>
+								<li><a href="##">没装</a></li>
+								<li><a href="##">电器<span></span></a></li>
+								<li><a href="##">女装</a></li>
+								<li><a href="##">男装</a></li>
+								<li><a href="##">女鞋</a></li>
+								<li><a href="##">男鞋<span></span></a></li>
+								<li><a href="##">内衣</a></li>
+								<li><a href="##">箱包</a></li>
+								<li><a href="##">运动</a></li>
+								<li><a href="##">母婴</a></li>
+								<li><a href="##">家装</a></li>
+								<li><a href="##">医药<span></span></a></li>
+								<li><a href="##">食品</a></li>
+								<li><a href="##">配饰</a></li>
+								<li><a href="##">汽车</a></li>
+							</ul>
+						</div>
+						<div class="webnav-float">
+							<p>品牌风尚&nbsp;Brand</p>
+							<ul>
+								<li><a href="##">上天猫</a></li>
+								<li><a href="##">大牌街</a></li>
+								<li><a href="##">潮牌街</a></li>
+								<li><a href="##">原创个毛</a></li>
+								<li><a href="##">山寨衣服</a></li>
+							</ul>
+						</div>
+						<div class="webnav-float">
+							<p>服务指南&nbsp;Help</p>
+							<ul>
+								<li><a href="##">品质保证</a></li>
+								<li><a href="##">特色服务</a></li>
+								<li><a href="##">7天包退换</a></li>
+								<li><a href="##">买了还能换？</a></li>
+								<li><a href="##">脑子有病</a></li>
+							</ul>
+						</div>
+					</div>
+				</li>
+				<li>
+					<a href="">商家支持<span class="down-arrow"></span></a>
+					<div class="nav-second-itemm">
+						<div class="nav-second-itemm-content">
+							<p>商家：</p>
+							<div class="nav-second-itemm-div">
+								<ul>
+									<li><a href="##">商家中心</a></li>
+									<li><a href="##">商家入驻</a></li>
+									<li><a href="##">运营服务</a></li>
+									<li><a href="##">商品品控</a></li>
+									<li><a href="##">商家工具</a></li>
+									<li><a href="##">商家规则</a></li>
+									<li><a href="##">天猫智库</a></li>
+									<li><a href="##">喵言喵语</a></li>
+								</ul>
+							</div>
+							<p>帮助：</p>
+							<div class="nav-second-itemm-div">
+								<ul>
+									<li><a href="##">帮助中心</a></li>
+									<li><a href="##">问商友</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</li>
+				<li><a href="">淘宝网</a></li>
+				<li>
+					<span class="nav-phone"></span><a href="###">手机版</a>
+					<div class="phone-code">
+						<div class="phone-code-top"></div>
+						<div class="phone-code-img"></div>
+						<p>扫二维码下载手机版</p>
+					</div>
+				</li>
+				<li>
+					<a href="##">收藏夹<span class="down-arrow"></span></a>
+					<div class="nav-second-items">
+						<a href="##">收藏的宝贝</a>
+						<a href="##">收藏的店铺</a>
+					</div>
+				</li>
+				<li><span class="nav-buycar"></span><a href="##">购物车&nbsp;<b>0</b>&nbsp;件</a></li>
+				<li><span class="nav-heart"></span><a href="##">我关注的品牌</a></li>
+				<li>
+					<a href="">我的淘宝<span class="down-arrow"></span></a>
+					<div class="nav-second-items">
+						<a href="##">已买到的宝贝</a>
+						<a href="##">已卖出的宝贝</a>
+					</div>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<!-- 头部 -->
+	<div class="header">
+		<div class="header-inner">
+			<div class="header-search clearselect">
+				<form action="post">
+					<input type="text" name="header-search" placeholder="没钱搜了也没用">
+				</form>
+				<span>搜&nbsp;&nbsp;索</span>
+			</div>
+			<ul>
+				<li><a href="##">JavaCript</a></li>
+				<li><a href="##">连衣裙</a></li>
+				<li><a href="##">四件套</a></li>
+				<li><a href="##">空调</a></li>
+				<li><a href="##">电风扇</a></li>
+				<li><a href="##">敌敌畏</a></li>
+				<li><a href="##">印度神油</a></li>
+				<li><a href="##">还有什么</a></li>
+			</ul>
+		</div>
+		<img src="tianmao_image/header-img.png" alt="假装有图片" />
+	</div>
+	<!-- 主体部分 -->
+	<div class="body">
+		<!-- 主体部分的导航栏目 -->
+		<div class="body-nav">
+			<ul class="clearfix">
+				<li>
+					<span>&nbsp;</span>商品分类
+					<ul class="body-nav-seconditem">
+						<li><a href="##">女装</a>/<a href="##">内衣</a></li>
+						<li><a href="##">男装</a>/<a href="##">运动户外</a></li>
+						<li><a href="##">女鞋</a>/<a href="##">男鞋</a>/<a href="##">箱包</a></li>
+						<li><a href="##">美妆</a>/<a href="##">个人护理</a></li>
+						<li><a href="##">腕表</a>/<a href="##">眼镜</a>/<a href="##">珠宝饰品</a></li>
+						<li><a href="##">手机</a>/<a href="##">数码</a>/<a href="##">电脑办公</a></li>
+						<li><a href="##">母婴</a>/<a href="##">玩具</a></li>
+						<li><a href="##">零食</a>/<a href="##">茶酒</a>/<a href="##">进口食品</a></li>
+						<li><a href="##">生鲜水果</a></li>
+						<li><a href="##">大家电</a>/<a href="##">生活电器</a></li>
+						<li><a href="##">家具建材</a></li>
+						<li><a href="##">图书音像</a></li>
+						<li><a href="##">厨具</a>/<a href="##">收纳</a>/<a href="##">宠物</a></li>
+						<li><a href="##">汽车</a>/<a href="##">配件</a>/<a href="##">用品</a></li>
+					</ul>
+				</li>
+				<li><a href="##"></a></li>
+				<li><a href="##"></a></li>
+				<li><a href="##">天猫会员</a></li>
+				<li><a href="##">天猫国际</a></li>
+				<li><a href="##">妙先生</a></li>
+				<li><a href="##">电器城</a></li>
+				<li><a href="##">医院馆</a></li>
+				<li><a href="##">营业厅</a></li>
+				<li><a href="##">肥猪旅行</a></li>
+				<li><a href="##">苏宁难购</a></li>
+			</ul>
+		</div>
+		<!-- 图片轮播 -->
+		<div class="body-rotation">
+			<div class="body-rotation-img" id="body-rotation-img">
+				<a href="##"><img src="tianmao_image/lunbo1.jpg" alt="" /></a>
+				<a href="##"><img src="tianmao_image/lunbo2.jpg" alt="" /></a>
+				<a href="##"><img src="tianmao_image/lunbo3.jpg" alt="" /></a>
+				<a href="##"><img src="tianmao_image/lunbo4.jpg" alt="" /></a>
+				<a href="##"><img src="tianmao_image/lunbo5.jpg" alt="" /></a>
+				<a href="##"><img src="tianmao_image/lunbo6.jpg" alt="" /></a>
+			</div>
+			<ul class="body-rotation-dots" id="body-rotation-dots">
+				<li class="active"></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+			</ul>
+			<span class="rotation-btn-left"></span>
+			<span class="rotation-btn-right"></span>
+		</div>
+		<!-- 分割线 -->
+		<div class="divide clearselect">
+			<span>&nbsp;</span>
+			<p><span>&nbsp;</span>动起来吧！(jQuery and CSS3)</p>
+			<span>&nbsp;</span>
+		</div>
+		<!-- 鼠标移动到项目上会出现不同动作的部分 -->
+		<div class="body-action clearfix">
+			<ul class="clearfix">
+				<li><a href="##"><img id="action-img1" src="tianmao_image/image002.jpg" alt="">&nbsp;</a></li>
+				<li><a href="##"><img id="action-img2" src="tianmao_image/image003.jpg" alt="">&nbsp;</a></li>
+				<li id="action-li-img3"><a href="##"><img id="action-img3" src="tianmao_image/image004.jpg" alt="">&nbsp;</a></li>
+				<li><a href="##"><img class="action-img4" src="tianmao_image/image005.jpg" alt="">&nbsp;</a></li>
+				<li><a href="##"><img class="action-img5" src="tianmao_image/image006.jpg" alt="">&nbsp;</a></li>
+			</ul>
+		</div>
+		<!-- 图片聚焦时出现高亮或者放大等效果 -->
+		<div class="body-light clearfix">
+			<div class="body-light-same">
+				<img class="light-img1" src="tianmao_image/light1.jpg" alt="风景" />
+			</div>
+			<div class="body-light-same">
+				<img class="light-img2" src="tianmao_image/light2.jpg" alt="风景" />
+				<div class="light-img2-bg"></div>
+			</div>
+			<div class="body-light-same">
+				<img class="light-img3" src="tianmao_image/light3.jpg" alt="风景" />
+				<p>漫天星空</p>
+			</div>
+		</div>
+
+		<!-- 分割线 -->
+		<div class="divide clearselect">
+			<span>&nbsp;</span>
+			<p><span>&nbsp;</span>手风琴效果</p>
+			<span>&nbsp;</span>
+		</div>
+
+		<!-- 手风琴效果 -->
+		<div class="body-accordion">
+			<div class="accordion">
+				<h3>HTML：网页的载体<span></span></h3>
+				<p>超文本标记语言，标准通用标记语言下的一个应用。“超文本”就是指页面内可以包含图片、链接，甚至音乐、程序等非文字元素。超文本标记语言的结构包括“头”部分（英语：Head）、和“主体”部分（英语：Body），其中“头”部提供关于网页的信息，“主体”部分提供网页的具体内容。</p>
+				<h3>CSS：网页的外衣<span></span></h3>
+				<p>层叠样式表(英文全称：Cascading Style Sheets)是一种用来表现HTML（标准通用标记语言的一个应用）或XML（标准通用标记语言的一个子集）等文件样式的计算机语言。CSS不仅可以静态地修饰网页，还可以配合各种脚本语言动态地对网页各元素进行格式化。</p>
+				<h3>JavaScript：实现特殊效果<span></span></h3>
+				<p>JavaScript一种直译式脚本语言，是一种动态类型、弱类型、基于原型的语言，内置支持类型。它的解释器被称为JavaScript引擎，为浏览器的一部分，广泛用于客户端的脚本语言，最早是在HTML（标准通用标记语言下的一个应用）网页上使用，用来给HTML网页增加动态功能。</p>
+				<h3>jQuery：让你轻松的工作<span></span></h3>
+				<p>jQuery是一个快速、简洁的JavaScript框架，是继Prototype之后又一个优秀的JavaScript代码库（或JavaScript框架）。jQuery设计的宗旨是“write Less，Do More”，即倡导写更少的代码，做更多的事情。它封装JavaScript常用的功能代码，提供一种简便的JavaScript设计模式，优化HTML文档操作、事件处理、动画设计和Ajax交互。</p>
+				<h3>AngularJS：一款优秀的前端JS框架<span></span></h3>
+				<p>AngularJS是一款优秀的前端JS框架，已经被用于Google的多款产品当中。AngularJS有着诸多特性，最为核心的是：MVC、模块化、自动化双向数据绑定、语义化标签、依赖注入等等。AngularJS是为了克服HTML在构建应用上的不足而设计的。</p>
+			</div>
+			<div class="accordion-img">
+				<img src="tianmao_image/html.jpg" alt="html">
+				<img src="tianmao_image/css.jpg" alt="css">
+				<img src="tianmao_image/js.jpg" alt="javascript">
+				<img src="tianmao_image/jQuery.jpg" alt="jQuery">
+				<img src="tianmao_image/angularJS.png" alt="AngularJS">
+			</div>
+		</div>
+	</div>
+	
+	<!-- 右边定位栏目 -->
+	<div class="R-fixed">
+		<div class="R-fixed-self">
+			<p><span>&nbsp;</span>个人信息</p>
+			<div class="selfInfo">
+				<img src="tianmao_image/myphoto.jpg" alt="个人照片" title="本人">
+				<div>
+					<p>姓&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;名：廖浩然</p>
+					<p>出生日期：1991/06/13&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;年龄：26岁</p>
+					<p>学&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;校：华南农业大学</p>
+					<p>专&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;业：应用化学&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;学历：本科</p>
+					<p>毕业时间：2015年6月</p>
+					<p>联系电话：188-2649-5310</p>
+					<p>邮&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;箱：413391153@qq.com</p>
+				</div>
+				<span></span>
+			</div>
+		</div>
+		<div class="R-fixed-skill">
+			<p><span></span>个人技能</p>
+			<div class="skillInfo">
+				<div>
+					<p>语言：熟悉掌握CSS、HTML、JavaScript、CSS3、HTML5，对Python、Java有一定的了解。</p>
+					<p>框架：熟悉掌握BootStrap、jQuery、AngularJS。</p>
+					<p>能力：能够自己完成网站整体页面的搭建，熟悉的运用BootStrap等框架，能够使用JS、jQuery和CSS3完成网页上的动画、图片轮播等效果。对响应式开发有一定的了解。</p>
+				</div>
+			</div>
+		</div>
+		<div class="R-fixed-weixin">
+			<div class="weixin-img">
+				<img src="tianmao_image/weixin1.jpg" alt="">
+				<p>欢迎前来骚扰</p>
+			</div>
+		</div>
+		<div class="R-fixed-totop">
+		</div>
+	</div>
+	
+	<!-- 底部 -->
+	<div class="footer">
+		<img src="tianmao_image/cloud.png" alt="云">
+		<p>制作by@廖浩然_LHR</p>
+		<div>
+			<p><span>&nbsp;</span>&nbsp;&nbsp;18826495310</p>
+			<p><span>&nbsp;</span>&nbsp;&nbsp;413391153@qq.com</p>
+			<p><span>&nbsp;</span>&nbsp;&nbsp;413391153</p>
+		</div>
+	</div>
+
+	<script type="text/javascript" src="tianmao_js/onload.js"></script>
+	<script type="text/javascript" src="tianmao_js/rotate.js"></script>
+	<script type="text/javascript" src="tianmao_js/action.js"></script>
+	<script type="text/javascript" src="tianmao_js/rightFixed.js"></script>
+	<script type="text/javascript" src="tianmao_js/imageLight.js"></script>
+	<script type="text/javascript" src="tianmao_js/accordion.js"></script>
+</body>
+</html>
